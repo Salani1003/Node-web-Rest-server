@@ -30,8 +30,8 @@ export class Server {
     this.app.use(express.static(this.publicPath));
 
     //* Routes
-
     this.app.use(this.routes);
+
     //*SPA
     this.app.get("*", (req, res) => {
       const indexPath = path.join(
